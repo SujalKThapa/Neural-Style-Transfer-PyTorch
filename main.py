@@ -33,7 +33,6 @@ def gram_matrix(input):
 
 def print_hi(name):
     print(f'{name}')
-    # Press Ctrl+F8 to toggle the breakpoint.
 
 def image_loader(image_name):
     image = Image.open(image_name)
@@ -48,7 +47,7 @@ def imshow(tensor, title=None):
     if title is not None:
         plt.title(title)
     plt.pause(0.01)
-# Press the green button in the gutter to run the script.
+    
 if __name__ == '__main__':
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     torch.set_default_device(device)
